@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Survey form</title>
+</head>
+<body>
+    <div id="container">
+        <!-- HEADER -->
+        <div id="header">
+            <p id="org">Axeno</p>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Help</a>
+            </nav>
+            <div id="icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- <div id="menu">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+        </div> -->
+        
+        <!-- MIDDLE PART -->
+        <div id="content">
+            <!-- HEADING -->
+            <h2 id="title">Client Feedback Form</h2>
+            <!-- FORM -->
+            <form>
+                <!-- Name -->
+                <div class="formelement">
+                    <div id="first" class="half">
+                        <label for="fname">*Firstname:</label>
+                        <input type="text" id="fname" name="fname" required>
+                    </div>
+                    <div id="second" class="half">
+                        <label for="lname">*Lastname:</label><br>
+                        <input type="text" id="lname" name="lname" required>
+                    </div> 
+                </div>
+                <!-- Email id -->
+                <div class="formelement2">
+                    <label for="emailid">*Email: </label><br>
+                    <input type="email" id="emailid" name="emailid" required>
+                </div>
+                <!-- Mobile Number -->
+                <div class="formelement">
+                    <div id="num" class="half">
+                        <label for="mobile">*Mobile Number: </label><br>
+                        <input type="number" id="mobile" name="mobile" required maxlength="10">
+                    </div>
+                    <div id="alter" class="half">
+                        <label for="altnum">Alternate Phone Number: </label><br>
+                        <input type="number" id="altnum" name="altnum">
+                    </div>
+                </div>
+                <!-- Address -->
+                <div class="formelement2">
+                    <label for="street">Street: </label><br>
+                    <input type="text" id="street" name="street">                
+                </div>
+
+                <div class="formelement">
+                    <div id="cityy" class="half">
+                        <label for="city">City: </label><br>
+                        <input type="text" id="city" name="city">
+                    </div>
+                    <div id="countryy" class="half">
+                        <label for="country">Country: </label><br>
+                        <input type="text" id="country" name="country">
+                    </div>
+                </div>
+                <!-- Gender -->
+                <div class="formelement2">
+                    <label>Gender: </label>
+                    <div class="radioelement" style="width: 180px;">
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <!-- Occupation -->
+                <div class="formelement2">
+                    <label for="occ">Occupation: </label><br>
+                    <input type="text" id="occ" name="occ">
+                </div>
+                <!-- dob -->
+                <div class="formelement2">
+                    <label for="dob">*DOB: </label><br>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <!-- feedback -->
+                <div class="formelement2">
+                    <label>Feedback: </label>
+                    <div class="radioelement">
+                        <label for="1">Worst</label>
+                        <input type="radio" id="1" name="feedback">
+                        <input type="radio" id="2" name="feedback">
+                        <input type="radio" id="3" name="feedback">
+                        <input type="radio" id="4" name="feedback">
+                        <input type="radio" id="5" name="feedback">
+                        <label for="5">Excellent</label>
+                    </div>
+                </div>
+                <!-- suggestion -->
+                <div class="formelement2">
+                    <label for="suggest">Suggestions For Improvement: </label>
+                    <textarea id="suggest" name="suggest"></textarea>
+                </div>
+                <!-- Submit button -->
+                <button type="submit" aria-label="submit the form">Submit</button>
+            </form> 
+        </div>
+
+        <!-- FOOTER -->
+        <div id="footer">
+            <p id="copyright">Copyright@2023 | Axeno Consultancy</p>
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
+
